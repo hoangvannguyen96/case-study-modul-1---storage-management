@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="warehouse.css" />
+  </head>
+  <body>
+    <div class="header">
+      <img class="banner" src="img/motorbanner.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="container-left">
+        <div class="container-leftleft">
+          <h3 class="container-left1 menu">CHUYÊN CUNG CẤP</h3>
+          <button class="container-left1 xe"><h3>XE SỐ</h3></button><br />
+          <button class="container-left1 xe"><h3>XE GA</h3></button><br />
+          <button class="container-left1 xe"><h3>XE NHẬP KHẨU</h3></button>
+          <img class="imgmotor" src="img/motojp.png" alt="" />
+        </div>
+      </div>
+      <div class="container-right">
+        <div class="container-right1">
+          <h1>QUẢN LÝ NHẬP KHO</h1>
+        </div>
+        <div class="container-right2">
+          <div class="container-right2-1">
+            <div class="container-right2-1-1">
+              <div class="container-right2-1-1-1">
+                <h4>MS xe</h4>
+                <input type="text" id="ms" />
+              </div>
+              <div class="container-right2-1-1-1">
+                <h4>Ảnh xe</h4>
+                <input type="text" id="img" />
+              </div>
+              <div class="container-right2-1-1-1">
+                <h4>Hãng xe</h4>
+                <input type="text" id="carCompany" />
+              </div>
+              <div class="container-right2-1-1-1">
+                <h4>Đời xe</h4>
+                <input type="text" id="carLife" />
+              </div>
+            </div>
+            <div class="container-right2-1-2">
+              <div class="container-right2-1-2-1">
+                <h4>Tên xe</h4>
+                <input type="text" id="name" />
+              </div>
+              <div class="container-right2-1-2-1">
+                <h4>Màu xe</h4>
+                <input type="text" id="color" />
+              </div>
+              <div class="container-right2-1-2-1">
+                <h4>Ngày nhập kho</h4>
+                <input type="text" id="date" />
+              </div>
+            </div>
+          </div>
+          <div class="container-right2-2">
+            <button class="add" onclick="add()"><h3>Add</h3></button>
+            <button class="save" onclick="save()"><h3>Save</h3></button>
+          </div>
+        </div>
+        <div class="container-right3">
+          <div class="container-right3-1" align="center">
+            <table style="width: 100%">
+              <tr>
+                <th
+                  colspan="9"
+                  style="font-size: large; color: rgb(201, 89, 15)"
+                >
+                  DANH SÁCH XE
+                </th>
+              </tr>
+              <tr style="background-color: blue; color: white">
+                <th><h4>MS xe</h4></th>
+                <th><h4>Ảnh xe</h4></th>
+                <th><h4>Hãng xe</h4></th>
+                <th><h4>Đời xe</h4></th>
+                <th><h4>Tên xe</h4></th>
+                <th><h4>Màu xe</h4></th>
+                <th><h4>Ngày nhập kho</h4></th>
+                <th colspan="2"><h4>Tùy chọn</h4></th>
+              </tr>
+              <tbody id="list-motors"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="motorinfo.js"></script>
+    <script src="motor.js"></script>
+    <script src="function.js"></script>
+  </body>
+</html>
